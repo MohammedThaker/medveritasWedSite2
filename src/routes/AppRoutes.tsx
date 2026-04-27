@@ -14,7 +14,7 @@
 //   npm install react-router-dom
 // ─────────────────────────────────────────────────────────────────
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import MedVeritasWed from "../medveritasapp";
 
 import { ServiceDetail }   from "../pages/services/ServiceDetail";
@@ -24,7 +24,6 @@ import { ContactSuccess }  from "../pages/contact/ContactSuccess";
 
 export function AppRoutes() {
   return (
-    <BrowserRouter>
       <Routes>
         {/* ── Homepage (all existing sections) ── */}
         <Route path="/" element={<MedVeritasWed />} />
@@ -58,6 +57,6 @@ export function AppRoutes() {
         {/* ── 404 fallback ── */}
         <Route path="*" element={<MedVeritasWed />} />
       </Routes>
-    </BrowserRouter>
+ 
   );
 }
