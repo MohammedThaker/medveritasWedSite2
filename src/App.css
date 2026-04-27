@@ -15,6 +15,7 @@
   --blue:        #29AAE1;
   --blue-dark:   #1a8bbf;
   --green:       #5BBB6B;
+  --navy-mid:    #0b2239;
   --navy:        #0D1B3E;
   --body:        #2D3748;
   --muted:       #6B7A9A;
@@ -299,8 +300,8 @@ img { display: block; max-width: 100%; }
 .hero {
   position: relative;
   padding: 144px 2rem 112px;
+    background: linear-gradient(222deg, var(--blue), var(--navy-mid));
   overflow: hidden;
-  background: #fff;
 }
 
 /* Subtle background geometry — uses brand colours at ultra-low opacity */
@@ -1494,6 +1495,18 @@ section.bg-off {
   .footer { padding: 56px 1.25rem 0; }
   .footer__inner { grid-template-columns: 1fr; }
   .footer__bottom { flex-direction: column; text-align: center; }
+}
+.l-med {
+  color: #4aad35;
+}
+
+.l-v {
+  color: var(--blue);
+}
+
+.l-rest {
+  color: #1a1a1a;
+  transition: color var(--tr);
 }
 .nav__logo {
   display: flex;

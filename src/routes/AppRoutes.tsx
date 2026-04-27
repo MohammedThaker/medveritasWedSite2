@@ -15,7 +15,7 @@
 // ─────────────────────────────────────────────────────────────────
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import App from "../App"; // existing homepage — unchanged
+import MedVeritasWed from "../medveritasapp";
 
 import { ServiceDetail }   from "../pages/services/ServiceDetail";
 import { ProjectDetail }   from "../pages/projects/ProjectDetail";
@@ -27,7 +27,7 @@ export function AppRoutes() {
     <BrowserRouter>
       <Routes>
         {/* ── Homepage (all existing sections) ── */}
-        <Route path="/" element={<App />} />
+        <Route path="/" element={<MedVeritasWed />} />
 
         {/* ── Service detail pages ── */}
         {/*
@@ -56,7 +56,7 @@ export function AppRoutes() {
         <Route path="/contact/success" element={<ContactSuccess />} />
 
         {/* ── 404 fallback ── */}
-        <Route path="*" element={<App />} />
+        <Route path="*" element={<MedVeritasWed />} />
       </Routes>
     </BrowserRouter>
   );
