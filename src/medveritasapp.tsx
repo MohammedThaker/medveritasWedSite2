@@ -348,6 +348,10 @@ export default function App() {
                   } as React.CSSProperties
                 }
               >
+                  <div
+                  className="pub-card__servce"
+                  style={{ background: "linear-gradient(90deg, " + (SERVICE_ACCENTS[svc.id] ?? "var(--blue") + ", transparent 70%)" }}
+                />
                 {/* Icon */}
                 <div
                   className="service-card__icon"

@@ -21,6 +21,7 @@
   --muted:       #6B7A9A;
   --bg-off:      #F7F9FC;
   --border:      #E2E8F0;
+  --herode:      #d9d9d9;
 
   /* ── Typography ── */
   --font-display: 'Plus Jakarta Sans', 'Outfit', system-ui, sans-serif;
@@ -210,7 +211,7 @@ img { display: block; max-width: 100%; }
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  background: var(--navy);
+  background: var(--green);
   color: #fff !important;
   padding: 8px 20px;
   border-radius: var(--r-sm);
@@ -348,14 +349,14 @@ img { display: block; max-width: 100%; }
   align-items: center;
   gap: 8px;
   padding: 5px 14px 5px 8px;
-  background: rgba(41,170,225,.08);
+  background: rgb(91 187 107 / 12%);
   border: 1px solid rgba(41,170,225,.2);
   border-radius: 999px;
   font-size: .78rem;
   font-weight: 700;
   letter-spacing: .07em;
   text-transform: uppercase;
-  color: var(--blue);
+  color: var(--herode);
   margin-bottom: 24px;
   width: fit-content;
   animation: fadeIn .6s ease .1s both;
@@ -378,7 +379,7 @@ img { display: block; max-width: 100%; }
   font-family: var(--font-display);
   font-size: clamp(2.6rem, 5vw, 3.8rem);
   font-weight: 800;
-  color: var(--navy);
+  color: var(--bg-off);
   line-height: 1.1;
   letter-spacing: -.03em;
   margin-bottom: 24px;
@@ -387,12 +388,12 @@ img { display: block; max-width: 100%; }
 
 .hero h1 em {
   font-style: normal;
-  color: var(--blue);
+  color: var(--green);
 }
 
 .hero__sub {
   font-size: 1.1rem;
-  color: var(--muted);
+  color: var(--herode);
   line-height: 1.75;
   max-width: 500px;
   margin-bottom: 40px;
@@ -652,7 +653,7 @@ section.bg-off {
 
 /* Primary */
 .btn-primary {
-  background: var(--blue);
+  background: var(--green);
   color: #fff;
   box-shadow: 0 2px 8px rgba(41,170,225,.3);
 }
@@ -959,8 +960,16 @@ section.bg-off {
 .pub-card__image-placeholder {
   height: 8px;
   width: 100%;
+  
 }
-
+.pub-card__servce {
+  position: absolute;
+    border-radius: 26px 34px 0px 3px;
+    top: 0px;
+    left: 0px;
+    right: 4px;
+    height: 3px;   
+}
 /* Card body */
 .pub-card__body {
   padding: 28px 28px 24px;
